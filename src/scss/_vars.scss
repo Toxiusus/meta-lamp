@@ -1,0 +1,26 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "MontserratRegular", sans-serif;
+  --second-family: "MontserratBold", sans-serif;
+  --content-width: 1160px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --offset: 32px;
+
+  // sizes
+  --main-size: 14px;
+  --second-size: 12px;
+
+  // colors
+  --light-color: #fff;
+  --dark-shade100: #1F2041;
+  --dark-shade75: #1F2041BF;
+  --dark-shade50: #1F204180;
+  --dark-shade25: #1F204140;
+  --dark-shade5: #ffffff;
+  --purple-color: #BC9CFF;
+  --primary-gradient: linear-gradient((180deg, #BC9CFF, #8BA4F9));
+  --green-color: #6FCF97;
+}
