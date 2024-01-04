@@ -6,8 +6,8 @@
       "<svg class=\"\">",
       "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
       "</svg>"
-    ],
-    "description": "Snippet for use svg sprites"
+    ]
+
   },
   "burger": {
     "scope": "html",
@@ -16,8 +16,8 @@
       "<button class=\"btn-reset burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\" data-burger>",
       "  <span class=\"burger__line\"></span>",
       "</button>"
-    ],
-    "description": "Snippet for burger btn"
+    ]
+
   },
   "checkbox": {
     "scope": "html",
@@ -27,8 +27,8 @@
       "  <input type=\"checkbox\" class=\"custom-checkbox__field\">",
       "  <span class=\"custom-checkbox__content\">$1</span>",
       "</label>"
-    ],
-    "description": "Snippet for custom checkbox"
+    ]
+
   },
   "navigation": {
     "scope": "html",
@@ -41,8 +41,8 @@
       "    <li class=\"nav__item\"><a href=\"#\" class=\"nav__link\"></a></li>",
       "  </ul>",
       "</nav>"
-    ],
-    "description": "Snippet for navigation"
+    ]
+
   },
   "social": {
     "scope": "html",
@@ -53,8 +53,8 @@
       "  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--vk\" aria-label=\"Наша страничка во Вконтакте\"></a></li>",
       "  <li class=\"social__item\"><a href=\"#\" target=\"_blank\" class=\"social__link social__link--tw\" aria-label=\"Наша страничка в Твиттере\"></a></li>",
       "</ul>"
-    ],
-    "description": "Snippet for social links"
+    ]
+
   },
   "basicform": {
     "prefix": "g-form",
@@ -65,8 +65,8 @@
       "  </label>",
       "  <button class=\"btn-reset form__btn\">Отправить</button>",
       "</form>"
-    ],
-    "description": "Snippet for basic form"
+    ]
+
   },
   "basicswiper": {
     "prefix": "g-swiper",
@@ -77,15 +77,15 @@
       "    </div>",
       "  </div>",
       "</div>"
-    ],
-    "description": "Snippet for basic swiper structure"
+    ]
+
   },
   "graph modal Btn": {
     "prefix": "g-btn",
     "body": [
       "<button class=\"btn-reset $1\" data-graph-path=\"$2\">$3</button>"
-    ],
-    "description": "Snippet for graph-modal btn"
+    ]
+
   },
   "graph modal Structure": {
     "prefix": "g-graph-modal",
@@ -96,8 +96,8 @@
       "    <div class=\"graph-modal__content\">$2</div>",
       "  </div>",
       "</div>"
-    ],
-    "description": "Snippet for graph-modal basic structure"
+    ]
+
   },
   "picture": {
     "prefix": "g-picture",
@@ -106,16 +106,16 @@
       "  <source srcset=\"$1.webp\" type=\"image/webp\">",
       "  <img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
       "</picture>"
-    ],
-    "description": "Snippet for basic logo structure"
+    ]
+
   },
   "svgimg": {
     "scope": "html",
     "prefix": "g-svgimg",
     "body": [
       "<img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">"
-    ],
-    "description": "Snippet for simple html svg images"
+    ]
+
   },
   "tooltip": {
   "prefix": "g-tooltip",
@@ -127,8 +127,8 @@
       "    $3",
       "  </span>",
       "</span>"
-    ],
-    "description": "Snippet for tooltip"
+    ]
+
   },
   "tabs html sctructure": {
     "prefix": "g-tabs",
@@ -145,7 +145,6 @@
       "    <div class=\"tabs__panel\">$7</div>",
       "  </div>",
       "</div>"
-    ],
-    "description": "Snippet for basic tabs structure"
+    ]
   }
 }

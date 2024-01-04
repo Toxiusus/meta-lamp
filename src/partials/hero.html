@@ -1,14 +1,102 @@
 <section class="hero">
   <div class="container grid">
     <div class="hero__content">
-      <div class="calendar">
-        <h1 class="hero__title">
-          Найдём номера под ваши пожелания
-        </h1>
-        <div class="month"></div>
-        <div class="weekdays"></div>
-        <div class="days"></div>
+      <div class="booking">
+        <h1 class="booking__title">Найдём номера под ваши пожелания</h1>
+        <div class="booking__box">
+          <div class="booking__start">
+            <p class="booking__text">прибытие</p>
+            <input
+              class="booking__input"
+              type="text"
+              placeholder="ДД.ММ.ГГГГ"
+              id="start"
+            />
+          </div>
+          <div class="booking__end">
+            <p class="booking__text">выезд</p>
+            <input
+              class="booking__input"
+              type="text"
+              placeholder="ДД.ММ.ГГГГ"
+              id="end"
+            />
+          </div>
+          <div class="booking__guests">
+            <p class="booking__text">гости</p>
+            <input
+              class="booking__inputguest"
+              type="text"
+              placeholder="Сколько гостей"
+              id="howManyGuests"
+            />
+          </div>
+        </div>
+        <button
+          class="booking__btn btn-reset nav__link--colored"
+          data-graph-path=""
+        >
+          подобрать номер
+        </button>
       </div>
+      <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="left"><img src="../img/calendar-left.png" alt=""></span>
+            <span id="next" class="right"><img src="../img/calendar-right.png" alt=""></span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Пн</li>
+            <li>Вт</li>
+            <li>Ср</li>
+            <li>Чт</li>
+            <li>Пт</li>
+            <li>Сб</li>
+            <li>Вс</li>
+          </ul>
+          <ul class="days"></ul>
+          <div class="buttons">
+            <button class="btn__delete btn-reset">очистить</button>
+            <button class="btn__submit btn-reset">применить</button>
+          </div>
+        </div>
+      </div>
+      <div class="guests">
+        <div class="guests__box">
+          <p class="guests__text">взрослые</p>
+          <div class="guests__count">
+            <span class="guests__minus" id="minusAdults">-</span>
+            <span class="guests__num" id="numAdults">0</span>
+            <span class="guests__plus" id="plusAdults">+</span>
+          </div>
+        </div>
+        <div class="guests__box">
+          <p class="guests__text">дети</p>
+          <div class="guests__count">
+            <span class="guests__minus" id="minusChildren">-</span>
+            <span class="guests__num" id="numChildren">0</span>
+            <span class="guests__plus" id="plusChildren">+</span>
+          </div>
+        </div>
+        <div class="guests__box">
+          <p class="guests__text">младенцы</p>
+          <div class="guests__count">
+            <span class="guests__minus" id="minusInfants">-</span>
+            <span class="guests__num" id="numInfants">0</span>
+            <span class="guests__plus" id="plusInfants">+</span>
+          </div>
+        </div>
+        <div class="guests-btn">
+          <button class="btn-reset guests-btn__action" id="guestsDelete">очистить</button>
+          <button class="btn-reset guests-btn__action"  id="guestsSubmit">применить</button>
+        </div>
+      </div>
+      <p class="hero__text">
+        Лучшие номера для вашей работы, отдыха и просто вдохновения
+      </p>
     </div>
   </div>
 </section>

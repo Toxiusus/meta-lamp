@@ -1,0 +1,45 @@
+<section class="registration">
+  <div class="container registration__inner">
+    <form class="reg" action="">
+      <p class="reg__title">Регистрация аккаунта</p>
+      <input class="reg__input" type="text" placeholder="Имя" />
+      <input class="reg__input" type="text" placeholder="Фамилия" />
+      <div class="radio">
+        <label class="radio__label">
+          <input class="radio__input" type="radio" name="rd" checked />
+          <span class="radio__span"></span>
+          <p class="radio__text">Мужчина</p>
+        </label>
+        <label class="radio__label">
+          <input class="radio__input" type="radio" name="rd" />
+          <span class="radio__span"></span>
+          <p class="radio__text">Женщина</p>
+        </label>
+      </div>
+      <p class="reg__minititle">дата рождения</p>
+      <input class="reg__input" type="text" placeholder="ДД.ММ.ГГГГ" />
+      <p class="reg__minititle">данные для входа в сервис</p>
+      <input class="reg__input" type="email" placeholder="Email" />
+      <input class="reg__input" type="password" placeholder="Пароль" />
+      <div class="toggle">
+        <label class="toggle__label" for="toggle">
+          <input class="toggle__input" type="checkbox" id="toggle" />
+          <span class="toggle__span"></span>
+          <p class="toggle__text">Получать спецпредложения</p>
+        </label>
+      </div>
+      <button class="reg__btn btn-reset nav__link--colored" type="submit">
+        зарегистрироваться
+      </button>
+      <div class="reg__box">
+        <p class="reg__text">Уже есть аккаунт на Toxin</p>
+        <a
+          class="reg__btnreg nav__link--uncolored btn-reset"
+          href="../login.html"
+        >
+          войти
+        </a>
+      </div>
+    </form>
+  </div>
+</section>

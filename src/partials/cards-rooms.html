@@ -1,0 +1,718 @@
+<section class="hero-rooms">
+  <div class="container hero-rooms__container">
+    <aside>
+      <div class="filters">
+        <div class="date select-menu">
+          <p class="date__title title-aside">даты пребывания в отеле</p>
+          <div class="date__btn global-select__btn">
+            <span class="select-menu__text">даты</span>
+          </div>
+          <div class="date-box">
+            <header>
+              <p class="current-date"></p>
+              <div class="icons">
+                <span id="prev" class="left"
+                  ><img src="../img/calendar-left.png" alt=""
+                /></span>
+                <span id="next" class="right"
+                  ><img src="../img/calendar-right.png" alt=""
+                /></span>
+              </div>
+            </header>
+            <div class="calendar">
+              <ul class="weeks">
+                <li>Пн</li>
+                <li>Вт</li>
+                <li>Ср</li>
+                <li>Чт</li>
+                <li>Пт</li>
+                <li>Сб</li>
+                <li>Вс</li>
+              </ul>
+              <ul class="days"></ul>
+              <div class="buttons">
+                <button class="btn__delete btn-reset">очистить</button>
+                <button class="btn__submit btn-reset">применить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="select-menu">
+          <p class="title-aside ">гости</p>
+          <div class="select-menu__btn global-select__btn">
+            <span class="select-menu__text">гости</span>
+          </div>
+          <div class="guests guests-rooms">
+            <div class="guests__box guests-rooms__box">
+              <p class="guests__text">взрослые</p>
+              <div class="guests__count">
+                <span class="guests__minus" id="minusAdults">-</span>
+                <span class="guests__num" id="numAdults">0</span>
+                <span class="guests__plus" id="plusAdults">+</span>
+              </div>
+            </div>
+            <div class="guests__box guests-rooms__box">
+              <p class="guests__text">дети</p>
+              <div class="guests__count">
+                <span class="guests__minus" id="minusChildren">-</span>
+                <span class="guests__num" id="numChildren">0</span>
+                <span class="guests__plus" id="plusChildren">+</span>
+              </div>
+            </div>
+            <div class="guests__box guests-rooms__box">
+              <p class="guests__text">младенцы</p>
+              <div class="guests__count">
+                <span class="guests__minus" id="minusInfants">-</span>
+                <span class="guests__num" id="numInfants">0</span>
+                <span class="guests__plus" id="plusInfants">+</span>
+              </div>
+            </div>
+            <div class="guests-btn guests-rooms__btn">
+              <button class="btn-reset guests-btn__action" id="guestsDelete">
+                очистить
+              </button>
+              <button class="btn-reset guests-btn__action" id="guestsSubmit">
+                применить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="range-slider">
+          <div class="range-slider__box">
+            <p class="range-slider__text">диапазон цены</p>
+            <div class="range-slider__inputs">
+              <div class="range-slider__field">
+                <input
+                  class="range-slider__minimum range-slider__input"
+                  type="number"
+                  value="2500"
+                />
+              </div>
+              <span>-</span>
+              <div class="range-slider__field">
+                <input
+                  class="range-slider__maximum range-slider__input"
+                  type="number"
+                  value="7500"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slider__progres"></div>
+          </div>
+          <div class="range-inputs">
+            <input
+              class="range-inputs__min range-inputs__num"
+              type="range"
+              min="0"
+              max="10000"
+              value="2500"
+              step="100"
+            />
+            <input
+              class="range-inputs__max range-inputs__num"
+              type="range"
+              min="0"
+              max="10000"
+              value="7500"
+              step="100"
+            />
+          </div>
+          <p class="range-slider__undertext">
+            Стоимость за сутки пребывания в номере
+          </p>
+        </div>
+        <div class="rules">
+          <p class="rules__title title-aside ">правила дома</p>
+          <label class="check option">
+            <input class="check__input" type="checkbox" />
+            <span class="check__box"></span>
+            <p class="check__text">Можно курить</p>
+          </label>
+          <label class="check option">
+            <input class="check__input" type="checkbox" checked />
+            <span class="check__box"></span>
+            <p class="check__text">Можно с питомцами</p>
+          </label>
+          <label class="check option">
+            <input class="check__input" type="checkbox" checked />
+            <span class="check__box"></span>
+            <p class="check__text">Можно пригласить гостей (до 10 человек)</p>
+          </label>
+        </div>
+        <div class="rules">
+          <p class="rules__title title-aside ">доступность</p>
+          <label class="check option">
+            <input class="check__input" type="checkbox" />
+            <span class="check__box"></span>
+            <p class="check__title">Широкий коридор</p>
+            <p class="check__text">Ширина коридоров в номере не менее 91 см.</p>
+          </label>
+          <label class="check option">
+            <input class="check__input" type="checkbox"/>
+            <span class="check__box"></span>
+            <p class="check__title">Помощник для инвалидов</p>
+            <p class="check__text">На 1 этаже вас встретит специалист  и проводит до номера.</p>
+          </label>
+        </div>
+        <div class="select-menu">
+          <p class="select-title title-aside ">удобства номера</p>
+          <div class="select-menu__btn global-select__btn">
+            <span class="select-menu__text">спальни</span>
+          </div>
+          <div class="guests guests-rooms">
+            <div class="guests__box guests-rooms__box">
+              <p class="guests__text">спальни</p>
+              <div class="guests__count">
+                <span class="guests__minus" id="minusAdults">-</span>
+                <span class="guests__num" id="numAdults">0</span>
+                <span class="guests__plus" id="plusAdults">+</span>
+              </div>
+            </div>
+            <div class="guests__box guests-rooms__box">
+              <p class="guests__text">кровати</p>
+              <div class="guests__count">
+                <span class="guests__minus" id="minusChildren">-</span>
+                <span class="guests__num" id="numChildren">0</span>
+                <span class="guests__plus" id="plusChildren">+</span>
+              </div>
+            </div>
+            <div class="guests__box guests-rooms__box">
+              <p class="guests__text">ванные комнаты</p>
+              <div class="guests__count">
+                <span class="guests__minus" id="minusInfants">-</span>
+                <span class="guests__num" id="numInfants">0</span>
+                <span class="guests__plus" id="plusInfants">+</span>
+              </div>
+            </div>
+            <div class="guests-btn guests-rooms__btn">
+              <button class="btn-reset guests-btn__action" id="guestsDelete">
+                очистить
+              </button>
+              <button class="btn-reset guests-btn__action" id="guestsSubmit">
+                применить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="select-menu">
+          <div class="select-menu__btn global-select__btn">
+            <span class="select-menu__text title-aside ">дополнительные удобства</span>
+          </div>
+          <div class="guests guests-rooms">
+            <label class="check option">
+              <input class="check__input" type="checkbox" />
+              <span class="check__box"></span>
+              <p class="check__text">Завтрак</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked/>
+              <span class="check__box"></span>
+              <p class="check__text">Письменный стол</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked/>
+              <span class="check__box"></span>
+              <p class="check__text">Стул для кормления</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox" checked/>
+              <span class="check__box"></span>
+              <p class="check__text">Кроватка</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox"/>
+              <span class="check__box"></span>
+              <p class="check__text">Телевизор</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox"/>
+              <span class="check__box"></span>
+              <p class="check__text">Шампунь</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox"/>
+              <span class="check__box"></span>
+              <p class="check__text">Телевизор</p>
+            </label>
+            <label class="check option">
+              <input class="check__input" type="checkbox"/>
+              <span class="check__box"></span>
+              <p class="check__text">Шампунь</p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="hero-rooms__cards">
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card1.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 888
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 900₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card2.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 840
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              8 500₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card3.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 980
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card4.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 856
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card5.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 740
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card6.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 982
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card7.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 678
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card8.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 450
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card9.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 350
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card10.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 666
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card11.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 444
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-rooms__card">
+        <img class="hero-rooms__img" src="../img/card12.jpg" alt="" />
+        <div class="hero-rooms__boxtext">
+          <div class="hero-rooms__info">
+            <p class="hero-rooms__number">
+              № 352
+              <span class="hero-rooms__luxury">люкс</span>
+            </p>
+            <p class="hero-rooms__price">
+              9 990₽
+              <span class="hero-rooms__perday">в сутки</span>
+            </p>
+          </div>
+          <div class="hero-rooms__rate">
+            <div class="hero-rooms__rating">
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+              <i>
+                <img src="../img/star.png" alt="" />
+              </i>
+            </div>
+            <p class="hero-rooms__numreviews">
+              145
+              <span class="hero-rooms__reviews">Отзывов</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination">
+      <a class="pagination__link pagination__link-active" href="#">1</a>
+      <a class="pagination__link" href="#">2</a>
+      <a class="pagination__link" href="#">3</a>
+      <a class="pagination__link" href="#">...</a>
+      <a class="pagination__link" href="#">15</a>
+      <a class="pagination__next" href="#">с</a>
+      <p class="pagination__text" id="nextArrow">
+        1 – 12 из 100+ вариантов аренды
+      </p>
+    </div>
+  </div>
+</section>
