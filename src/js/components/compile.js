@@ -39,7 +39,6 @@ for (let i = 0; i < guestsMinus.length; i++) {
     }else {
       input.innerHTML = 0;
     }
-
     getTotal();
   })
 }
@@ -66,12 +65,16 @@ function getTotal() {
   }
 }
 
-// const selectBtn = document.querySelector(".select-menu__btn");
+let guestsDelete = document.getElementById("guestsDelete");
 
-// const guestsRooms = document.querySelector(".guests-rooms");
+guestsDelete.addEventListener("click",function deleteGuests() {
 
-// setListener(selectBtn, 'click', () => {
-//   guestsRooms.classList.toggle("guests-rooms__active");
-// });
+  document.getElementById("howManyGuests").value = 0;
 
+  let arr = document.querySelectorAll(".guests__num");
+
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].innerHTML = 0;
+  }
+})
 
