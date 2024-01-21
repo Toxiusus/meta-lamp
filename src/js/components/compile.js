@@ -77,4 +77,3 @@ guestsDelete.addEventListener("click",function deleteGuests() {
     arr[i].innerHTML = 0;
   }
 })
-
